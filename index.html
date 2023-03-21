@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--시계-->
+    <!--입력창(로그인후 none)-->
+    <!--인사말(로그인후 blodck)-->
+    <!--할일 입력창-->
+    <h1 id="year">00년 00월 00일</h1>
+    <h1 id="clock">00:00:00</h1>
+    <!---->
+    <form id="login-form">
+      <input id="login-form__text" type="text" placeholder="이름 입력하샘" />
+      <input id="login-form__submit" type="submit" value="Login" />
+    </form>
+    <!---->
+    <h1 class="hidden" id="greeting">?</h1>
+    <!---->
+
+    <form class="memo-forms" id="memo-form" action="#">
+      <input type="text" placeholder="?" />
+      <input type="submit" value="Add Btn" />
+    </form>
+
+    <h1 id="count"></h1>
+
+    <ul id="todolist"></ul>
+
+    <script src="backGround.js"></script>
+    <script src="clock.js"></script>
+    <script src="login.js"></script>
+    <script src="todo.js"></script>
+  </body>
+</html>
